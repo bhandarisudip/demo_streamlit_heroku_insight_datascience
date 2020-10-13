@@ -97,7 +97,7 @@ X = dfcopy[["enrollee_id",
             "claim_items_id",
             "claim_items_claim_id"]]
 
-y = dfcopy["hmo_status_-1.0"]
+y = dfcopy["hmo_status_10"]
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0)
 rfc.fit(X_train,y_train)

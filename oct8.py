@@ -7,7 +7,7 @@ import numpy as np
 #title of the project
 st.title("""ClaimCatcher""")
 st.subheader("Automated Medical Insurance Fraud Detection")
-st.write("Welcome to ClaimCatcher. Please enter the details claim details.")
+st.write("Welcome to ClaimCatcher. Please enter the claim details.")
 
 #fetch some data
 #df = pd.read_csv("ClaimExport.csv")

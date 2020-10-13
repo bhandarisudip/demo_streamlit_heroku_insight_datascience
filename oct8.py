@@ -2,6 +2,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+from sklearn.model_selection import cross_val_predict
 
 
 #title of the project

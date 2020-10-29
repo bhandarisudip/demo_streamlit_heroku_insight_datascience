@@ -55,9 +55,6 @@ hmo_id1 = float(st.sidebar.selectbox(
     ('1', '2', '3'))
 )
 
-# User input on the enrollee id
-provider_id1 = float(st.sidebar.text_input("Enter provider id", 0))
-
 
 # User input on the care id
 care_id1 = float(st.sidebar.text_input("Enter care id of the claim", 0))
@@ -115,7 +112,6 @@ print(classification_report(y_test,y_pre))
 inputs = {
                 'enrollee_id': enrollee_id1, 
                 'hmo_id': hmo_id1, 
-                'provider_id1': provider_id1, 
                 'care_id': care_id1,
                 "claim_items_qty": claim_items_qty1, 
                 "claim_items_amountusd": claim_items_amountusd1,
@@ -129,7 +125,6 @@ inputs = {
 #Probability of this claim being fraudulent 
 new_predictions = rfc.predict_proba([[enrollee_id1, 
             hmo_id1, 
-            provider_id1,
             care_id1, 
             claim_items_qty1, 
             claim_items_amountusd1,

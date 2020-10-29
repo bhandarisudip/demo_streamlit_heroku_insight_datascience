@@ -88,8 +88,7 @@ from sklearn.metrics import ConfusionMatrixDisplay
 rfc = RandomForestClassifier(n_estimators=100, random_state = 42)
 
 X = dfcopy[["enrollee_id", 
-            "hmo_id", 
-            "provider_id",
+            "hmo_id",
             "care_id", 
              "claim_items_qty", 
             "claim_items_amountusd",
